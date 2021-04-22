@@ -1,0 +1,22 @@
+Algorithm sentance
+VAR
+   i : INTEGER := 0;
+   j : INTEGER := 0;
+   k : INTEGER := 0;
+   str : STRING;
+
+BEGIN
+ READ(str);
+ REPEAT
+     IF(str[i]=" ")THEN
+         j:=j+1;
+     END_IF
+     IF(str[i]="a" or "i" or "u" or "o" or "e" or "y")THEN
+         K:=K+1;
+     END_IF
+     i:=i+1
+ UNTIL (str[i]=".")
+ Write("The length of the sentence is",i )
+ write("The number of words in the sentence is",j+1)
+ Write("The number of vowels in the sentence is",k)
+END
